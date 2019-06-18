@@ -4,7 +4,7 @@ ifdef USE_SUDO_FOR_DOCKER
 endif
 
 IMAGE ?= docker.gmem.cc/osb-starter-pack/servicebroker
-TAG ?= $(shell git describe --tags --always)
+TAG ?= latest
 PULL ?= IfNotPresent
 
 build: ## Builds the starter pack
